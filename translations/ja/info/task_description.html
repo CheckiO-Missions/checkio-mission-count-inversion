@@ -1,0 +1,68 @@
+<p>
+  コンピューター科学と離散数学では、
+    <a href="http://ja.wikipedia.org/wiki/%E8%BB%A2%E5%80%92_(%E6%95%B0%E5%AD%A6)">転倒</a>は
+    要素が自然な順番に並んでいない配列の場所のペアである。
+    番号のグループを昇順で使うとしたら転倒とは大きい番号が小さい番号の前に現れる時である。
+</p>
+<!-- <p>
+    In computer science and discrete mathematics,
+    an <a href="http://en.wikipedia.org/wiki/Inversion_(discrete_mathematics)">inversion</a>
+    is a pair of places in a sequence where the elements in these places are out of their natural order. So, if we use
+    ascending order for a group of numbers, then an inversion is when larger numbers appear before lower number in a
+    sequence.
+</p> -->
+
+<p>
+    この配列の例をチェックしてみましょう。 (1, 2, 5, 3, 4, 7, 6) には3つの転倒があります。<br>
+    - 5 と 3
+    - 5 と 4
+    - 7 と 6
+</p>
+<!-- <p>
+    Check out this example sequence: (1, 2, 5, 3, 4, 7, 6) and we can see here three inversions<br>
+    - 5 and 3;
+    - 5 and 4;
+    - 7 and 6.
+</p> -->
+
+<p>
+    あなたはユニークな番号の配列が与えられ、その配列の転倒数を数えなくてはいけません。
+</p>
+<!-- <p>
+    You are given a sequence of unique numbers and you should count the number of inversions in this sequence.
+</p> -->
+
+<p>
+    <strong>入力 </strong> 配列が整数のタプルとして与えられる
+</p>
+
+<p>
+    <strong>出力 </strong> 転倒数を整数として出力する
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>例</strong>
+    </p>
+    <pre class="brush: python">
+count_inversion((1, 2, 5, 3, 4, 7, 6)) == 3
+count_inversion((0, 1, 2, 3)) == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+  <strong>どうやって使われるか </strong>
+  このミッションではネストされたループの不思議を経験することになるでしょう、
+  もちろんもしあなたが高度なアルゴリズムを使わなければですが。
+    <!-- <strong>How it is used: </strong>
+    In this mission you will get to experience the wonder of nested loops,
+    that is of course, if you don't use advanced algorithms. -->
+</p>
+
+<p>
+    <strong>事前条件</strong>
+    2 &lt; len(sequence) &lt; 200<br>
+    len(sequence) == len(set(sequence))<br>
+    all(-100 &lt; x &lt; 100 for x in sequence)
+</p>
