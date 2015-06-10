@@ -1,0 +1,55 @@
+<p>
+  En ciencias de la computaci&oacute;n y matem&aacute;ticas discretas,
+  una <a href="http://en.wikipedia.org/wiki/Inversion_(discrete_mathematics)">inversi&oacute;n</a>
+  es un par de lugares en una secuencia en la que los elementos en
+  dichos lugares est&aacute;n fuera de su orden natural. Por lo tanto, si utilizamos
+  orden ascendente para caracterizar un grupo de n&uacute;meros, entonces una
+  inversi&oacute;n es cuando uno o m&aacute;s n&uacute;meros grandes aparecen antes de n&uacute;meros
+  m&aacute;s peque&ntilde;os en la secuencia.
+</p>
+
+<p>
+  Echa un vistazo a esta secuencia de ejemplo: (1, 2, 5, 3, 4, 7, 6).
+  Podemos ver aqu&iacute; tres inversiones:<br>
+    - 5 y 3;
+    - 5 y 4;
+    - 7 y 6.
+</p>
+
+<p>
+  Se te da una secuencia de n&uacute;meros &uacute;nicos y deber&aacute;s contar el n&uacute;mero de
+  inversiones en dicha secuencia.
+</p>
+
+<p>
+    <strong>Datos de Entrada: </strong> Una secuencia, como una tupla de
+    enteros (<em>int</em>).
+</p>
+
+<p>
+    <strong>Salida: </strong> El n&uacute;mero de inversiones, como un entero (<em>int</em>).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Ejemplo:</strong>
+    </p>
+    <pre class="brush: python">
+count_inversion((1, 2, 5, 3, 4, 7, 6)) == 3
+count_inversion((0, 1, 2, 3)) == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>&iquest;C&oacute;mo se usa?:</strong>
+    En esta misi&oacute;n podr&aacute;s experimentar la maravilla de bucles anidados,
+    por supuesto, si no utilizas ning&uacute;n algoritmo avanzado.
+</p>
+
+<p>
+    <strong>Condiciones:</strong>
+    2 &lt; len(sequence) &lt; 200<br>
+    len(sequence) == len(set(sequence))<br>
+    all(-100 &lt; x &lt; 100 for x in sequence)
+</p>
