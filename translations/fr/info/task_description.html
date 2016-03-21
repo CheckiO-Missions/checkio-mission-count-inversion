@@ -1,28 +1,32 @@
 <p>
     En informatique et en math&eacute;matiques discr&egrave;tes,
     une <a href="http://en.wikipedia.org/wiki/Inversion_(discrete_mathematics)">inversion</a>
-    est un couple d'endroits dans une s&eacute;quence o&ugrave; les &eacute;l&eacute;ments &agrave; ces endroits ne suivent pas leur ordre naturel.
-    Ainsi, si nous utilisons l'ordre croissant pour trier un groupe de nombres, une inversion se produit quand, dans une s&eacute;quence donn&eacute;e,
-    des nombres plus grands apparaissent devant des nombres plus petits.
+    est un couple de positions dans une suite  telles que les &eacute;l&eacute;ments situés à ces positions
+    ne suivent pas leur ordre naturel.
+    Ainsi, si nous utilisons l'ordre croissant pour trier une suite de nombres, une inversion se produit quand, 
+    dans cette suite,
+    des nombres plus grands apparaissent avant des nombres plus petits.
 </p>
 
 <p>
-    Regardez par exemple cette s&eacute;quence (1, 2, 5, 3, 4, 7, 6) ; nous pouvons voir qu'il y a ici trois inversions :<br>
+    Observons par exemple cette suite de nombres : (1, 2, 5, 3, 4, 7, 6) ; nous pouvons voir qu'il y a ici 
+    trois inversions :<br>
     - 5 et 3 ;
     - 5 et 4 ;
     - 7 et 6.
 </p>
 
 <p>
-    On vous donne une s&eacute;quence de nombres uniques et vous devez compter le nombre d'inversions dans cette s&eacute;quence.
+    On vous donne une suite de nombres diff&eacute;rents  et vous devez compter le nombre d'inversions 
+    dans cette suite.
 </p>
 
 <p>
-    <strong>Entr&eacute;e : </strong> Une s&eacute;quence en tant que tuple d'entiers.
+    <strong>Entr&eacute;e : </strong> Une suite de nombres, en tant que tuple d'entiers.
 </p>
 
 <p>
-    <strong>Sortie : </strong> Le nombre d'inversions en tant qu'entier.
+    <strong>Sortie : </strong> Le nombre d'inversions, en tant qu'entier.
 </p>
 
 
@@ -39,7 +43,7 @@ count_inversion((0, 1, 2, 3)) == 0
 <p class="for_info_only">
     <strong>&Agrave; quoi cela sert : </strong>
     Dans cette mission, vous allez pouvoir utiliser des boucles imbriqu&eacute;es,
-    si bien s&ucirc;r, vous n'utilisez pas d'algorithmes plus avanc&eacute;s.
+    si bien s&ucirc;r, vous n'utilisez pas d'algorithme plus avanc&eacute;.
 </p>
 
 <p>
