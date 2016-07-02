@@ -1,0 +1,51 @@
+<p>
+    In informatica ed in matematica discreta,
+    un'<a href="http://en.wikipedia.org/wiki/Inversion_(discrete_mathematics)">inversione</a>
+    &egrave; una coppia di posti un una sequenza occupati da elementi che non sono nel loro ordine naturale.
+    Dunque, se consideriamo l'ordine ascendente per un gruppo di numeri, un'inversione avviene quando
+    un numero pi&ugrave; grande compare prima di uno pi&ugrave; piccolo nella sequenza.
+</p>
+
+<p>
+    Osserva questa sequenza d'esempio: (1, 2, 5, 3, 4, 7, 6).
+    Possiamo vedere che ci sono tre inversioni:<br>
+    - 5 e 3;
+    - 5 e 4;
+    - 7 e 6.
+</p>
+
+<p>
+    Ti viene data una sequenza di numeri unici e devi contare il numero di inversioni in essa.
+</p>
+
+<p>
+    <strong>Input: </strong> Una sequenza come tupla di interi.
+</p>
+
+<p>
+    <strong>Output: </strong> Il numero di inversioni come intero.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Esempio:</strong>
+    </p>
+    <pre class="brush: python">
+count_inversion((1, 2, 5, 3, 4, 7, 6)) == 3
+count_inversion((0, 1, 2, 3)) == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Come si usa:</strong>
+    In questa missione farai esperienza della meraviglia dei cicli annidati.
+    A meno che, naturalmente, tu non usi algoritmi pi&ugrave; sofisticati.
+</p>
+
+<p>
+    <strong>Prerequisiti:</strong>
+    2 &lt; len(sequence) &lt; 200<br>
+    len(sequence) == len(set(sequence))<br>
+    all(-100 &lt; x &lt; 100 for x in sequence)
+</p>
