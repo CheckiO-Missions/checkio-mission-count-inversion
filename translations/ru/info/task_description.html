@@ -33,10 +33,13 @@
     <p>
         <strong>Примеры:</strong>
     </p>
-    <pre class="brush: python">
+    <pre class="brush: python">{% if interpreter.slug == "js-node" %}
+countInversion([1, 2, 5, 3, 4, 7, 6]) == 3
+countInversion([0, 1, 2, 3]) == 0
+{% else %}
 count_inversion((1, 2, 5, 3, 4, 7, 6)) == 3
 count_inversion((0, 1, 2, 3)) == 0
-    </pre>
+{% endif %}</pre>
 </div>
 
 <p class="for_info_only">
