@@ -1,0 +1,53 @@
+<p>
+    In Informatik und diskreter Mathematik,
+    ein <a href="http://en.wikipedia.org/wiki/Inversion_(discrete_mathematics)">inversion</a>
+    ein Paar von Stellen in einer Folge, bei dem die Elemente an diesen Stellen nicht in ihrer natürlichen Reihenfolge sind. Wenn wir also eine
+    aufsteigende Reihenfolge für eine Gruppe von Zahlen verwenden, dann ist eine Inversion, wenn größere Zahlen vor niedrigeren Zahlen in einer
+    folge.
+</p>
+
+<p>
+    Sehen Sie sich diese Beispielfolge an: (1, 2, 5, 3, 4, 7, 6) und wir können hier drei Invertierungen sehen<br/>
+    - 5 und 3;<br/>
+    - 5 und 4;<br/>
+    - 7 und 6.<br/>
+</p>
+
+<p>
+    Sie erhalten eine Folge von eindeutigen Zahlen und sollen die Anzahl der Umkehrungen in dieser Folge zählen.
+</p>
+
+<p>
+   <strong>Eingabe: </strong> Eine Sequenz als Tupel von ganzen Zahlen.
+</p>
+
+<p>
+   <strong>Ausgabe: </strong> Die Inversionsnummer als ganze Zahl.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Beispiel:</strong>
+    </p>
+    <pre class="brush: python">{% if interpreter.slug == "js-node" %}
+countInversion([1, 2, 5, 3, 4, 7, 6]) == 3
+countInversion([0, 1, 2, 3]) == 0
+{% else %}
+count_inversion((1, 2, 5, 3, 4, 7, 6)) == 3
+count_inversion((0, 1, 2, 3)) == 0
+{% endif %}</pre>
+</div>
+
+<p class="for_info_only">
+   <strong>Wie sie verwendet wird: </strong>
+    In dieser Mission werden Sie das Wunder der verschachtelten Schleifen erleben,
+    das heißt natürlich, wenn Sie keine fortgeschrittenen Algorithmen verwenden.
+</p>
+
+<p>
+   <strong>Vorbedingung:</strong>
+    2 &lt; len(Folge) &lt; 200<br>
+    len(Folge) == len(set(Folge))<br>
+    all(-100 &lt; x &lt; 100 für x in Folge)
+</p>

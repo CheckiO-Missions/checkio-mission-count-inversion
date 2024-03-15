@@ -1,0 +1,40 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        Ich habe keine Ahnung, wie ich mit der Lösung dieser Mission beginnen soll
+    </div>
+    <div class="answer">
+        Um Indizes in einem Array zu iterieren, verwenden Sie "<a href="https://docs.python.org/2/library/functions.html#range">range</a>".
+<pre class="brush: python">
+for i in range(len(array)):
+    ...
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich brauche Hilfe, um mit der Mission fortzufahren
+    </div>
+    <div class="answer">
+        Die zweite Schleife (wenn Sie die einfachste Methode verwenden) sollte "nach" dem ersten Schleifenindex gestartet werden.
+<pre class="brush: python">
+for i in range(len(array)):
+    for j in range(i + 1, len(array)):
+        ...
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich bin auf halbem Wege steckengeblieben. Ich brauche Hilfe!
+    </div>
+    <div class="answer">
+        Vergleichen Sie einfach die Elemente und zählen Sie sie.
+<pre class="brush: python">
+if array[i]> array[j]:
+    count += 1
+    </pre>
+    </div>
+</div>
+
+</body>
